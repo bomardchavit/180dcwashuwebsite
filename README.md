@@ -1,6 +1,12 @@
 # 180 Degrees Consulting WashU website
 
-Static rebuild of [180dcwashu.org](https://www.180dcwashu.org/): plain HTML, CSS and a little JavaScript. No build step and no dependencies, so it can be hosted anywhere that serves static files.
+The 180 Degrees Consulting WashU website: plain HTML, CSS and a little JavaScript. No build step and no dependencies, so it can be hosted anywhere that serves static files.
+
+## The design
+
+Clean and modern, built around the club's own identity: the 180 DC globe logo, its dark green and bright green, and the *Plus Jakarta Sans* typeface. Pages use generous space, rounded photos of members and Saint Louis, and thin rules to organise content, with the bright green kept for buttons and highlights.
+
+Motion stays quiet: headlines rise into place on load, the globe logo in the home hero floats gently and leans toward the pointer, sections and photos ease in as you reach them, the mission statement fills in as you read, and the numbers count up. Everything respects the visitor's reduced-motion setting, and the content stays fully visible if JavaScript is off or fails to load.
 
 ## Structure
 
@@ -8,10 +14,11 @@ Static rebuild of [180dcwashu.org](https://www.180dcwashu.org/): plain HTML, CSS
 index.html              Home
 our-team/index.html     Our Team
 services/index.html     Services (includes the contact form)
-recruitment/index.html  Recruitment (FAQ accordions)
-assets/css/styles.css   All styles: theme colours, fonts, layout grid, components
-assets/js/main.js       Mobile menu, FAQ accordions, animated recruitment background, contact form
-assets/images/          Photos and logos
+recruitment/index.html  Recruitment (timeline and FAQ)
+assets/css/site.css     All styles: colours, type, layout, components, motion
+assets/js/site.js       Smooth scrolling, header, menu, hero logo, reveals, counters,
+                        people strip, capability index, timeline, FAQ, contact form
+assets/images/          Photos and logos (logo-globe-large.webp is the hero globe)
 ```
 
 ## Preview locally
@@ -24,15 +31,23 @@ Then open http://localhost:8000. Pages link to each other with relative paths, s
 
 ## Deploy
 
-Any static host works: GitHub Pages (Settings → Pages → deploy from the `main` branch root), Vercel or Netlify (import the repo, no build command). Point the `180dcwashu.org` domain at whichever host you choose.
+The site is published with GitHub Pages from the root of the `main` branch, at **https://180dcwashu.com**. Pushing to `main` updates the live site within a minute or two.
+
+- The `CNAME` file tells GitHub Pages which domain to serve; keep it in the repository root.
+- The domain's DNS is managed in Cloudflare: `A` records for `180dcwashu.com` point to GitHub Pages (185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153) and `www` is a `CNAME` to `bomardchavit.github.io`. Keep these records set to "DNS only".
+- HTTPS is managed in the repository's Settings → Pages.
+
+Any other static host (Vercel, Netlify) also works: import the repo, with no build command.
 
 ## Editing content
 
-- **Text**: edit the HTML directly. Paragraph sizes use the classes `text-large` and `text-small`.
-- **Team members**: each person is one `<li class="list-item">` in `our-team/index.html`. Copy an existing one, then change the photo, name, role and Calendly link.
+- **Text**: edit the HTML directly.
+- **Capabilities**: each capability is one `<li class="cap-row">` on the home page and one `<article class="cap">` (plus its link in the index) on the Services page.
+- **Team members**: each person is one `<li class="person">` in `our-team/index.html` (and in the leadership strip on the home page). Copy an existing one, then change the photo, name, role and Calendly link.
+- **Numbers on the home page**: each count animates up to the number in its `data-count` attribute, so change the attribute and the text together.
+- **Logos**: client and employer logos are `<li class="logos__item">` cards and the `marquee` list; add or remove items as needed.
 - **Images**: add files to `assets/images/` and reference them by name.
-- **Colours and fonts**: the design tokens are at the top of `assets/css/styles.css`. The site uses the Google Fonts *Unbounded* (headings) and *Archivo* (body).
-- **Layout**: blocks inside a section are placed on a 24-column grid on desktop and an 8-column grid on phones. `--d` and `--m` in each block's `style` attribute are its grid positions (`row-start / column-start / row-end / column-end`).
+- **Colours and fonts**: the design tokens are at the top of `assets/css/site.css`. The typeface is *Plus Jakarta Sans* from Google Fonts.
 
 ## Contact form
 

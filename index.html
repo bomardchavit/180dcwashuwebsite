@@ -1,93 +1,401 @@
 <!doctype html>
-<html lang="en-US">
+<html lang="en-US" class="no-js">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>180 Degrees Consulting WashU</title>
-  <link rel="canonical" href="https://www.180dcwashu.org">
+  <meta name="description" content="WashU&#x27;s branch of 180 Degrees Consulting: pro-bono consulting for the nonprofits and small businesses of Saint Louis.">
+  <meta name="theme-color" content="#243617">
+  <link rel="canonical" href="https://180dcwashu.com/">
   <link rel="icon" type="image/x-icon" href="assets/images/favicon-light.ico" media="(prefers-color-scheme: light)">
   <link rel="icon" type="image/x-icon" href="assets/images/favicon-dark.ico" media="(prefers-color-scheme: dark)">
   <meta property="og:site_name" content="180 Degrees Consulting WashU">
   <meta property="og:title" content="180 Degrees Consulting WashU">
-  <meta property="og:url" content="https://www.180dcwashu.org">
+  <meta property="og:description" content="WashU&#x27;s branch of 180 Degrees Consulting: pro-bono consulting for the nonprofits and small businesses of Saint Louis.">
+  <meta property="og:url" content="https://180dcwashu.com/">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.180dcwashu.org/assets/images/og-image.jpg">
+  <meta property="og:image" content="https://180dcwashu.com/assets/images/og-image.jpg">
   <meta name="twitter:card" content="summary">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,700;1,400;1,700&amp;family=Unbounded:wght@400;700&amp;display=swap">
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script src="assets/js/main.js" defer></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400..800&amp;display=swap">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.className = "js"; setTimeout(function () { if (!window.siteReady) document.documentElement.classList.remove("js"); }, 4000);</script>
+  <script src="assets/js/site.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#page">Skip to Content</a>
-  <header class="site-header">
-    <div class="header-inner">
-      <a class="header-logo" href="./"><img src="assets/images/logo-globe.webp" alt="180 Degrees Consulting WashU" width="98" height="100"></a>
-      <nav class="header-nav" aria-label="Main">
-        <a href="./" aria-current="page">Home</a>
-        <a href="our-team/">Our Team</a>
-        <a href="services/">Services</a>
-        <a href="recruitment/">Recruitment</a>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header site-header--on-dark">
+    <div class="wrap header-inner">
+      <a class="brand" href="./"><img src="assets/images/logo-globe.webp" alt="" width="30" height="31"><span>180 DC WashU</span></a>
+      <nav class="nav" aria-label="Main">
+        <a class="nav__link" href="our-team/">Our team</a>
+        <a class="nav__link" href="services/">Services</a>
+        <a class="nav__link" href="recruitment/">Recruitment</a>
       </nav>
-      <button class="header-burger" type="button" aria-label="Open Menu" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span></button>
+      <a class="btn btn--primary btn--small nav-cta" href="recruitment/"><span class="btn__label"><span>Join us</span></span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Open menu"><span></span><span></span></button>
     </div>
   </header>
-  <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile">
-    <a href="./" aria-current="page">Home</a>
-    <a href="our-team/">Our Team</a>
-    <a href="services/">Services</a>
-    <a href="recruitment/">Recruitment</a>
-  </nav>
-  <main id="page">
-    <section class="section theme-black section--top" style="--min-h:33vh;--pt:3vw;--pb:6.6vmax">
-      <div class="section-bg"><img src="assets/images/bg-campus-night.webp" alt="" loading="eager" decoding="async"><div class="section-overlay" style="opacity:0.45"></div></div>
-      <div class="section-content">
-       <div class="grid" style="--rows-m:6;--rows-d:17">
-        <div class="block" style="--m:1/2/7/10;--d:4/7/18/21;--z:1"><div class="image"><div class="image-frame" style="--ar:2182/2456"><img src="assets/images/logo-180dc-washu-white.png" alt="180 Degrees Consulting WashU" width="1500" height="1688" loading="eager" decoding="async"></div></div></div>
-       </div>
+  <div class="menu" id="menu">
+    <ul class="menu__links">
+      <li><a href="./">Home</a></li>
+      <li><a href="our-team/">Our team</a></li>
+      <li><a href="services/">Services</a></li>
+      <li><a href="recruitment/">Recruitment</a></li>
+    </ul>
+    <a class="btn btn--primary" href="recruitment/"><span class="btn__label"><span>Join us</span></span></a>
+  </div>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <h1 class="hero__title" id="hero-title" data-split>Developing solutions in Saint Louis,<br> for Saint Louis.</h1>
+          <p class="hero__lede" data-intro style="--i:1">We're the WashU branch of 180 Degrees Consulting, the world's largest student consulting organization for nonprofits and social enterprises. Our members take on pro-bono projects for the small businesses and nonprofits that hold Saint Louis together.</p>
+          <div class="actions" data-intro style="--i:2">
+            <a class="btn btn--primary" href="services/#contact"><span class="btn__label"><span>Work with us</span></span></a>
+            <a class="btn btn--ghost" href="recruitment/"><span class="btn__label"><span>Join the team</span></span></a>
+          </div>
+        </div>
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__glow"></div>
+          <div class="hero__float">
+            <img class="hero__logo" src="assets/images/logo-globe-large.webp" alt="" width="922" height="929" fetchpriority="high">
+          </div>
+        </div>
+      </div>
+      <div class="wrap">
+        <ul class="hero__stats" data-intro style="--i:3">
+          <li class="stat"><p class="stat__value"><span data-count="170">170</span>+</p><p class="stat__label">branches of 180 Degrees Consulting worldwide</p></li>
+          <li class="stat"><p class="stat__value"><span data-count="10">10</span></p><p class="stat__label">organizations we've worked with since 2024</p></li>
+          <li class="stat"><p class="stat__value"><span data-count="6">6</span></p><p class="stat__label">core capabilities, from growth strategy to organizational design</p></li>
+          <li class="stat"><p class="stat__value"><span data-count="1">1</span>st</p><p class="stat__label">social impact consulting organization on WashU's campus</p></li>
+        </ul>
       </div>
     </section>
-    <section class="section theme-white" style="--min-h:33vh;--pt:3.3vmax;--pb:3.3vmax">
-      <div class="section-bg"></div>
-      <div class="section-content">
-       <div class="grid" style="--rows-m:26;--rows-d:17">
-        <div class="block" style="--m:2/2/27/10;--d:1/2/18/26;--z:1"><div class="shape" style="--r:0 49px 49px 49px;--stroke-w:1px;--shape-fill:var(--accent)"></div></div>
-        <div class="block" style="--m:4/3/19/9;--d:2/3/17/11;--z:2"><div class="text"><h2><span class="hl"><span class="c-white">180 Degrees Consulting WashU</span></span></h2><p class="text-large"><span class="c-white">Developing solutions in Saint Louis, for Saint Louis.</span></p><p class="text-large"><span class="c-white">180 Degrees Consulting is the <strong>world's largest student consulting organization</strong> for non-profits and social enterprises. With 170+ branches worldwide, we provide sustainable, innovative services to socially-conscious organizations.</span></p></div></div>
-        <div class="block" style="--m:18/3/26/9;--d:1/12/18/25;--z:3"><div class="image"><div class="image-frame" style="--ar:1937/1452;--r:50px"><img src="assets/images/team-group-spring-2025.webp" alt="180 Degrees Consulting WashU members at the chapter launch" width="1937" height="1452" loading="lazy" decoding="async"></div></div></div>
-       </div>
+
+    <section class="section" aria-labelledby="mission-title">
+      <div class="wrap">
+        <h2 class="visually-hidden" id="mission-title">Our mission</h2>
+        <p class="mission__text" data-fill>Social impact is the core value all of our work revolves around. Our members come from every corner of WashU, with different ambitions and skill sets. What we share is a goal to make a more compassionate, sustainable world, one step at a time.</p>
       </div>
     </section>
-    <section class="section theme-white" style="--min-h:13vh;--pt:1.3vmax;--pb:1.3vmax">
-      <div class="section-bg"></div>
-      <div class="section-content">
-       <div class="grid" style="--rows-m:27;--rows-d:14">
-        <div class="block" style="--m:1/2/27/10;--d:1/2/15/26;--z:1"><div class="shape" style="--r:0 49px 49px 49px;--stroke-w:1px;--shape-fill:var(--accent)"></div></div>
-        <div class="block" style="--m:2/2/8/10;--d:2/3/14/14;--z:5"><div class="image"><div class="image-frame" style="--ar:6720/4480;--r:50px"><img src="assets/images/team-group-formal.webp" alt="180 Degrees Consulting WashU members in business attire" width="2500" height="1667" loading="lazy" decoding="async"></div></div></div>
-        <div class="block" style="--m:8/3/12/9;--d:2/15/4/25;--z:3"><div class="text"><h1><span class="c-white">Our Mission</span></h1></div></div>
-        <div class="block" style="--m:12/3/26/9;--d:5/15/14/23;--z:4"><div class="text"><p class="text-large"><span class="c-white"><strong>Social impact</strong> is the core value which all our branch’s work revolves around as we work with non-profits and social enterprises.  Our members come from a wide array of disciplines, have unique ambitions, and have many <strong>different skill sets</strong>. Despite these differences, what each member of 180 DC WashU shares is a goal to <strong>make a more compassionate, sustainable world, one step at a time.</strong></span></p></div></div>
-       </div>
+
+    <section class="section section--mint" aria-labelledby="caps-title">
+      <div class="wrap">
+        <div class="section-head section-head--split">
+          <h2 class="t-h2" id="caps-title" data-reveal>Six core capabilities</h2>
+          <p class="t-lede" data-reveal style="--i:1">Some issues are client- and situation-specific, so we tailor every engagement. These are the areas we work in.</p>
+        </div>
+        <ul class="cap-rows" data-reveal="group">
+          <li class="cap-row" style="--i:0">
+            <span class="cap-row__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span>
+            <h3 class="cap-row__title">Growth</h3>
+            <ul class="cap-row__items"><li>Go-to-market strategy</li><li>New product development</li><li>Customer acquisition strategy</li><li>Funding strategy</li></ul>
+          </li>
+          <li class="cap-row" style="--i:1">
+            <span class="cap-row__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 19c0-8.3 6.2-14 15-14 0 8.8-5.8 15-14 15H5z"/><path d="M5 19l8.5-8.5"/></svg></span>
+            <h3 class="cap-row__title">Sustainability</h3>
+            <ul class="cap-row__items"><li>Impact assessment</li><li>Policy research and analysis</li><li>Social responsibility strategy</li><li>Employee engagement</li></ul>
+          </li>
+          <li class="cap-row" style="--i:2">
+            <span class="cap-row__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="5.5" cy="12" r="2.5"/><circle cx="18.5" cy="5.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/><path d="M8 11l8-4.4M8 13l8 4.4"/></svg></span>
+            <h3 class="cap-row__title">Operations</h3>
+            <ul class="cap-row__items"><li>Financial analysis</li><li>Business model transformation</li><li>Process optimization</li><li>Partnership evaluation</li></ul>
+          </li>
+          <li class="cap-row" style="--i:3">
+            <span class="cap-row__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 10v4h3l7 5V5l-7 5H4z"/><path d="M18 9.5a3.5 3.5 0 0 1 0 5"/></svg></span>
+            <h3 class="cap-row__title">Marketing</h3>
+            <ul class="cap-row__items"><li>Digital marketing strategy</li><li>Market segmentation</li><li>Sustainable brand building</li><li>User engagement and analytics</li></ul>
+          </li>
+          <li class="cap-row" style="--i:4">
+            <span class="cap-row__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6"/><path d="M20 20l-5.2-5.2"/></svg></span>
+            <h3 class="cap-row__title">Research</h3>
+            <ul class="cap-row__items"><li>Competitive analysis</li><li>Industry profiling</li><li>Consumer insights</li><li>Data analysis and visualization</li></ul>
+          </li>
+          <li class="cap-row" style="--i:5">
+            <span class="cap-row__icon"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="9" y="3" width="6" height="5" rx="1.2"/><rect x="3" y="16" width="6" height="5" rx="1.2"/><rect x="15" y="16" width="6" height="5" rx="1.2"/><path d="M12 8v4M6 12h12M6 12v4M18 12v4"/></svg></span>
+            <h3 class="cap-row__title">Organization</h3>
+            <ul class="cap-row__items"><li>Organizational design</li><li>Human capital strategy</li><li>Diversity, equity, and inclusion</li><li>Purpose alignment</li></ul>
+          </li>
+        </ul>
+        <div class="section-foot" data-reveal>
+          <a class="btn btn--ghost" href="services/"><span class="btn__label"><span>Explore our services</span></span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="clients-title">
+      <div class="wrap">
+        <div class="section-head section-head--split">
+          <h2 class="t-h2" id="clients-title" data-reveal>Organizations we've worked with</h2>
+          <p class="t-lede" data-reveal style="--i:1">Every project is pro bono. These are the Saint Louis organizations our teams have worked with so far.</p>
+        </div>
+        <ul class="logos" data-reveal="group">
+          <li class="logos__item" style="--i:0"><img src="assets/images/client-mastercard.svg" alt="" width="1000" height="618" loading="lazy" decoding="async"><span>Mastercard</span></li>
+          <li class="logos__item" style="--i:1"><img src="assets/images/client-lewis-clark-capital.svg" alt="" width="209" height="82" loading="lazy" decoding="async"><span>Lewis & Clark Capital</span></li>
+          <li class="logos__item" style="--i:2"><img src="assets/images/client-circus-harmony.webp" alt="" width="138" height="136" loading="lazy" decoding="async"><span>Circus Harmony</span></li>
+          <li class="logos__item" style="--i:3"><img src="assets/images/client-trailnet.png" alt="" width="1500" height="502" loading="lazy" decoding="async"><span>Trailnet</span></li>
+          <li class="logos__item" style="--i:4"><img src="assets/images/client-world-wide-technology.webp" alt="" width="600" height="129" loading="lazy" decoding="async"><span>World Wide Technology</span></li>
+          <li class="logos__item" style="--i:5"><img src="assets/images/client-stl-help.webp" alt="" width="517" height="387" loading="lazy" decoding="async"><span>St. Louis HELP</span></li>
+          <li class="logos__item" style="--i:6"><img src="assets/images/client-st-louis-mediation-project.webp" alt="" width="273" height="273" loading="lazy" decoding="async"><span>St. Louis Mediation Project</span></li>
+          <li class="logos__item" style="--i:7"><img src="assets/images/client-balsa-foundation.webp" alt="" width="500" height="529" loading="lazy" decoding="async"><span>The BALSA Foundation</span></li>
+          <li class="logos__item" style="--i:8"><img src="assets/images/client-passback.webp" alt="" width="1500" height="488" loading="lazy" decoding="async"><span>Passback</span></li>
+          <li class="logos__item" style="--i:9"><img src="assets/images/client-crosses-for-cameron.png" alt="" width="538" height="464" loading="lazy" decoding="async"><span>Crosses for Cameron</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section--flush-top" aria-labelledby="paths-title">
+      <div class="wrap">
+        <h2 class="visually-hidden" id="paths-title">Work with us or join us</h2>
+        <div class="paths">
+          <article class="path" data-reveal>
+            <div class="path__media media" data-reveal="media">
+              <img data-parallax src="assets/images/bg-saint-louis-skyline.webp" alt="" width="1200" height="700" loading="lazy" decoding="async">
+            </div>
+            <div class="path__body">
+              <h3 class="t-h3">Bring us your project</h3>
+              <p class="t-body">We scope every engagement with you, around your circumstances, then put a student team on it with the backing of 180 Degrees Consulting's global resources.</p>
+              <ul class="facts">
+                <li>Growth, sustainability, operations, marketing, research, and organization</li>
+                <li>Scoped with you, around your circumstances</li>
+                <li>No cost to your organization</li>
+              </ul>
+              <a class="btn btn--primary" href="services/"><span class="btn__label"><span>See our services</span></span></a>
+            </div>
+          </article>
+          <article class="path" data-reveal style="--i:1">
+            <div class="path__media media" data-reveal="media">
+              <img data-parallax src="assets/images/team-group-spring-2025.webp" alt="Members of 180 Degrees Consulting WashU" width="1937" height="1452" loading="lazy" decoding="async">
+            </div>
+            <div class="path__body">
+              <h3 class="t-h3">Join a project team</h3>
+              <p class="t-body">Members work in teams of a project manager and four to five consultants, on client meetings, market research, data analysis, and client-facing presentations.</p>
+              <ul class="facts">
+                <li>Open to students from every WashU school</li>
+                <li>No consulting experience required</li>
+                <li>6–8 hours a week after onboarding</li>
+              </ul>
+              <a class="btn btn--primary" href="recruitment/"><span class="btn__label"><span>How to join</span></span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--mint" aria-labelledby="people-title">
+      <div class="wrap">
+        <div class="section-head section-head--row">
+          <div class="section-head__text">
+            <h2 class="t-h2" id="people-title" data-reveal>The people behind the work</h2>
+            <p class="t-lede" data-reveal style="--i:1">Students from every WashU school. Book a coffee chat with anyone on our leadership team.</p>
+          </div>
+          <div class="strip-controls" data-reveal style="--i:2">
+            <button class="round-btn" type="button" data-strip="prev" aria-label="Show previous people"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M14.5 6 8.5 12l6 6"/></svg></button>
+            <button class="round-btn" type="button" data-strip="next" aria-label="Show more people"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9.5 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+      <div class="strip" data-reveal>
+        <ul class="strip__list">
+          <li class="person">
+            <a class="person__link" href="https://cal.com/simran-chanda-kwhoxx/30min" target="_blank" rel="noopener" aria-label="Book a coffee chat with Simran Chanda (opens in a new tab)">
+              <span class="person__photo"><img src="assets/images/team-simran-chanda.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async"></span>
+              <span class="person__cta" aria-hidden="true">Book a coffee chat</span>
+            </a>
+            <h3 class="person__name">Simran Chanda</h3>
+            <p class="person__role">President</p>
+          </li>
+          <li class="person">
+            <a class="person__link" href="https://calendly.com/bomardchavit/30min" target="_blank" rel="noopener" aria-label="Book a coffee chat with Bom Pattanpaisal (opens in a new tab)">
+              <span class="person__photo"><img src="assets/images/team-bom-pattanpaisal.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async"></span>
+              <span class="person__cta" aria-hidden="true">Book a coffee chat</span>
+            </a>
+            <h3 class="person__name">Bom Pattanpaisal</h3>
+            <p class="person__role">Vice President</p>
+          </li>
+          <li class="person">
+            <a class="person__link" href="https://calendly.com/jack-powers" target="_blank" rel="noopener" aria-label="Book a coffee chat with Jack Powers (opens in a new tab)">
+              <span class="person__photo"><img src="assets/images/team-jack-powers.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async"></span>
+              <span class="person__cta" aria-hidden="true">Book a coffee chat</span>
+            </a>
+            <h3 class="person__name">Jack Powers</h3>
+            <p class="person__role">Project Director</p>
+          </li>
+          <li class="person">
+            <a class="person__link" href="https://calendly.com/rao-satvik/30min?month=2026-08" target="_blank" rel="noopener" aria-label="Book a coffee chat with Satvik Rao (opens in a new tab)">
+              <span class="person__photo"><img src="assets/images/team-satvik-rao.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async" style="object-position:54.8% 32.8%"></span>
+              <span class="person__cta" aria-hidden="true">Book a coffee chat</span>
+            </a>
+            <h3 class="person__name">Satvik Rao</h3>
+            <p class="person__role">Project Director</p>
+          </li>
+          <li class="person">
+            <a class="person__link" href="https://calendly.com/j-b-patel-wustl/30min" target="_blank" rel="noopener" aria-label="Book a coffee chat with Jahnavi Patel (opens in a new tab)">
+              <span class="person__photo"><img src="assets/images/team-jahnavi-patel.webp" alt="" width="1000" height="1500" loading="lazy" decoding="async"></span>
+              <span class="person__cta" aria-hidden="true">Book a coffee chat</span>
+            </a>
+            <h3 class="person__name">Jahnavi Patel</h3>
+            <p class="person__role">Marketing Director</p>
+          </li>
+          <li class="person">
+            <a class="person__link" href="https://calendly.com/ehong789/30min" target="_blank" rel="noopener" aria-label="Book a coffee chat with Esther Hong (opens in a new tab)">
+              <span class="person__photo"><img src="assets/images/team-esther-hong.webp" alt="" width="603" height="795" loading="lazy" decoding="async"></span>
+              <span class="person__cta" aria-hidden="true">Book a coffee chat</span>
+            </a>
+            <h3 class="person__name">Esther Hong</h3>
+            <p class="person__role">Recruitment Director</p>
+          </li>
+          <li class="person">
+            <a class="person__link" href="https://calendly.com/jolpan330/30min" target="_blank" rel="noopener" aria-label="Book a coffee chat with Joleen Pan (opens in a new tab)">
+              <span class="person__photo"><img src="assets/images/team-joleen-pan.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async"></span>
+              <span class="person__cta" aria-hidden="true">Book a coffee chat</span>
+            </a>
+            <h3 class="person__name">Joleen Pan</h3>
+            <p class="person__role">Finance Director</p>
+          </li>
+          <li class="person">
+            <a class="person__link" href="https://calendly.com/amyw2728/30min" target="_blank" rel="noopener" aria-label="Book a coffee chat with Amy Wang (opens in a new tab)">
+              <span class="person__photo"><img src="assets/images/team-amy-wang.webp" alt="" width="1000" height="1370" loading="lazy" decoding="async"></span>
+              <span class="person__cta" aria-hidden="true">Book a coffee chat</span>
+            </a>
+            <h3 class="person__name">Amy Wang</h3>
+            <p class="person__role">Social Chair</p>
+          </li>
+          <li class="person">
+            <a class="person__link" href="https://calendly.com/fisher-j-e-wustl/180degree-consulting-coffee-chat" target="_blank" rel="noopener" aria-label="Book a coffee chat with Jacob Fisher (opens in a new tab)">
+              <span class="person__photo"><img src="assets/images/team-jacob-fisher.webp" alt="" width="1000" height="751" loading="lazy" decoding="async"></span>
+              <span class="person__cta" aria-hidden="true">Book a coffee chat</span>
+            </a>
+            <h3 class="person__name">Jacob Fisher</h3>
+            <p class="person__role">Professional Development Director</p>
+          </li>
+          <li class="person">
+            <a class="person__link" href="https://calendly.com/christienwong/meeting" target="_blank" rel="noopener" aria-label="Book a coffee chat with Christien Wong (opens in a new tab)">
+              <span class="person__photo"><img src="assets/images/team-christien-wong.webp" alt="" width="1000" height="1500" loading="lazy" decoding="async"></span>
+              <span class="person__cta" aria-hidden="true">Book a coffee chat</span>
+            </a>
+            <h3 class="person__name">Christien Wong</h3>
+            <p class="person__role">Senior Advisor</p>
+          </li>
+          <li class="person">
+            <a class="person__link" href="https://calendly.com/nkulkarni543/30min" target="_blank" rel="noopener" aria-label="Book a coffee chat with Neel Kulkarni (opens in a new tab)">
+              <span class="person__photo"><img src="assets/images/team-neel-kulkarni.webp" alt="" width="1000" height="1000" loading="lazy" decoding="async"></span>
+              <span class="person__cta" aria-hidden="true">Book a coffee chat</span>
+            </a>
+            <h3 class="person__name">Neel Kulkarni</h3>
+            <p class="person__role">Senior Advisor</p>
+          </li>
+        </ul>
+      </div>
+      <div class="wrap section-foot">
+        <a class="btn btn--ghost" href="our-team/"><span class="btn__label"><span>Meet the whole team</span></span></a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="network-title">
+      <div class="wrap">
+        <div class="section-head section-head--split">
+          <h2 class="t-h2" id="network-title" data-reveal>Our members' employer network</h2>
+          <p class="t-lede" data-reveal style="--i:1">It spans consulting, finance, technology, aerospace, and public service, and it grows every semester.</p>
+        </div>
+      </div>
+      <div class="marquee" data-reveal>
+        <div class="marquee__track">
+          <ul class="marquee__list">
+            <li><img src="assets/images/network-mckinsey.svg" alt="McKinsey &amp; Company" width="360" height="45" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-bcg.svg" alt="Boston Consulting Group" width="1024" height="432" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-microsoft.png" alt="Microsoft" width="1500" height="844" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-deloitte.png" alt="Deloitte" width="712" height="438" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-ey.webp" alt="EY" width="1200" height="1212" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-kpmg.webp" alt="KPMG" width="1200" height="478" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-accenture.webp" alt="Accenture" width="1024" height="270" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-blackrock.webp" alt="BlackRock" width="1280" height="186" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-jpmorgan.png" alt="J.P. Morgan" width="1500" height="844" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-boeing.webp" alt="Boeing" width="1024" height="465" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-federal-reserve.png" alt="Federal Reserve System" width="1200" height="1200" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-columbia.svg" alt="Columbia University" width="357" height="55" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-cornell.svg" alt="Cornell University" width="152" height="20" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-zs.png" alt="ZS" width="1200" height="947" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-simon-kucher.webp" alt="Simon-Kucher" width="1200" height="630" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-stifel.webp" alt="Stifel" width="1500" height="844" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-pnc.webp" alt="PNC" width="1280" height="388" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-maryville.png" alt="Maryville Consulting Group" width="710" height="192" loading="lazy" decoding="async"></li>
+          </ul>
+          <ul class="marquee__list" aria-hidden="true">
+            <li><img src="assets/images/network-mckinsey.svg" alt="" width="360" height="45" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-bcg.svg" alt="" width="1024" height="432" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-microsoft.png" alt="" width="1500" height="844" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-deloitte.png" alt="" width="712" height="438" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-ey.webp" alt="" width="1200" height="1212" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-kpmg.webp" alt="" width="1200" height="478" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-accenture.webp" alt="" width="1024" height="270" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-blackrock.webp" alt="" width="1280" height="186" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-jpmorgan.png" alt="" width="1500" height="844" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-boeing.webp" alt="" width="1024" height="465" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-federal-reserve.png" alt="" width="1200" height="1200" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-columbia.svg" alt="" width="357" height="55" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-cornell.svg" alt="" width="152" height="20" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-zs.png" alt="" width="1200" height="947" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-simon-kucher.webp" alt="" width="1200" height="630" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-stifel.webp" alt="" width="1500" height="844" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-pnc.webp" alt="" width="1280" height="388" loading="lazy" decoding="async"></li>
+            <li><img src="assets/images/network-maryville.png" alt="" width="710" height="192" loading="lazy" decoding="async"></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" aria-labelledby="cta-title">
+      <div class="wrap cta__inner">
+        <h2 class="cta__title" id="cta-title" data-reveal>Work with us, or join us.</h2>
+        <div class="cta__side" data-reveal style="--i:1">
+          <p>Bring us a project for your organization, or apply to join a project team.</p>
+          <div class="actions">
+            <a class="btn btn--primary" href="services/#contact"><span class="btn__label"><span>Start a project</span></span></a>
+            <a class="btn btn--ghost" href="recruitment/"><span class="btn__label"><span>Join the team</span></span></a>
+          </div>
+        </div>
       </div>
     </section>
   </main>
   <footer class="site-footer">
-    <div class="section theme-black" style="--min-h:8vh;--pt:0.8vmax;--pb:0.8vmax">
-      <div class="section-bg"></div>
-      <div class="section-content">
-       <div class="grid" style="--rows-m:31;--rows-d:8;--gap-r:0px;--gap-c:0px">
-        <div class="block" style="--m:2/2/8/10;--d:2/5/8/9;--z:3"><div class="image"><div class="image-frame" style="--ar:2182/2456"><img src="assets/images/logo-180dc-washu-white.png" alt="180 Degrees Consulting WashU" width="1500" height="1688" loading="lazy" decoding="async"></div></div></div>
-        <div class="block" style="--m:9/2/11/10;--d:2/11/3/15;--z:11"><div class="text"><p style="text-align:center"><strong>ABOUT US</strong></p></div></div>
-        <div class="block" style="--m:11/2/13/10;--d:4/11/5/15;--z:7"><div class="text"><p style="text-align:center"><a href="/our-team">OUR TEAM</a></p></div></div>
-        <div class="block" style="--m:13/2/15/10;--d:5/11/7/15;--z:8"><div class="text"><p style="text-align:center"><a href="/services">PARTNERSHIPS</a></p></div></div>
-        <div class="block" style="--m:15/2/17/10;--d:6/11/8/15;--z:9"><div class="text"><p style="text-align:center"><a href="https://www.180dc.org/" rel="noopener" target="_blank">180 DC GLOBAL</a></p></div></div>
-        <div class="block" style="--m:17/2/19/10;--d:2/16/3/20;--z:10"><div class="text"><p style="text-align:center"><strong>CONTACT US</strong></p></div></div>
-        <div class="block" style="--m:19/2/21/10;--d:4/16/5/20;--z:6"><div class="text"><p style="text-align:center"><a href="https://www.instagram.com/180dcwashu/" rel="noopener" target="_blank">INSTAGRAM</a></p></div></div>
-        <div class="block" style="--m:21/2/23/10;--d:5/16/7/20;--z:7"><div class="text"><p style="text-align:center"><span class="hl"><a href="https://www.linkedin.com/company/180dcwashu/posts/?feedView=all" rel="noopener" target="_blank">LINKEDIN</a></span></p></div></div>
-        <div class="block" style="--m:23/2/25/10;--d:6/16/7/20;--z:8"><div class="text"><p style="text-align:center"><a href="mailto:180dcwashu@gmail.com" rel="noopener" target="_blank">EMAIL</a></p></div></div>
-        <div class="block" style="--m:25/2/27/10;--d:7/16/8/20;--z:9"><div class="text"><p style="text-align:center"><a href="https://linktr.ee/180dcWashU" rel="noopener" target="_blank">LINKTREE</a></p></div></div>
-        <div class="block" style="--m:27/2/29/10;--d:2/21/4/25;--z:11"><div class="text"><p style="text-align:center"><strong>JOIN US</strong></p></div></div>
-        <div class="block" style="--m:29/2/31/10;--d:4/21/5/25;--z:7"><div class="text"><p style="text-align:center"><a href="https://wustl.presence.io/organization/180-degrees-consulting-washu/join" rel="noopener" target="_blank">WUGO</a></p></div></div>
-       </div>
+    <div class="wrap">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="./"><img src="assets/images/logo-180dc-washu-white.png" alt="180 Degrees Consulting WashU" width="150" height="169" loading="lazy"></a>
+          <p>Pro-bono consulting for the nonprofits and small businesses of Saint Louis, by WashU students.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Explore</h2>
+          <ul>
+            <li><a href="our-team/">Our team</a></li>
+            <li><a href="services/">Services</a></li>
+            <li><a href="recruitment/">Recruitment</a></li>
+            <li><a href="https://www.180dc.org/" target="_blank" rel="noopener">180 DC Global</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Follow</h2>
+          <ul>
+            <li><a href="https://www.instagram.com/180dcwashu/" target="_blank" rel="noopener">Instagram</a></li>
+            <li><a href="https://www.linkedin.com/company/180dcwashu/posts/?feedView=all" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://linktr.ee/180dcWashU" target="_blank" rel="noopener">Linktree</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="mailto:180dcwashu@gmail.com">180dcwashu@gmail.com</a></li>
+            <li><a href="mailto:washu@180dc.org">washu@180dc.org</a></li>
+            <li><a href="https://wustl.presence.io/organization/180-degrees-consulting-washu/join" target="_blank" rel="noopener">Join us on WUGO</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 180 Degrees Consulting WashU</p>
+        <p>A branch of <a href="https://www.180dc.org/" target="_blank" rel="noopener">180 Degrees Consulting</a></p>
       </div>
     </div>
   </footer>
