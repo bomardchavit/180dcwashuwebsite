@@ -113,7 +113,7 @@
      tucked away while reading down the page ---------- */
   const header = document.querySelector(".site-header");
   if (header) {
-    const darkZones = [...document.querySelectorAll(".hero, .cta, .site-footer")];
+    const darkZones = [...document.querySelectorAll(".hero, .section--roster, .cta, .site-footer")];
     let lastY = window.scrollY;
     header.addEventListener("focusin", () => header.classList.remove("is-hidden"));
     scrollTasks.push(() => {
@@ -203,6 +203,13 @@
         if (!entry.isIntersecting) continue;
         entry.target.classList.add("is-in");
         revealer.unobserve(entry.target);
+        entry.target.querySelectorAll("animateMotion").forEach((motion, i) => {
+          if (!motion.beginElement) return;
+          setTimeout(() => {
+            motion.beginElement();
+            motion.parentElement.classList.add("is-running");
+          }, 1500 + i * 1400);
+        });
       }
     }, { rootMargin: "0px 0px -8% 0px", threshold: 0.1 });
     reveals.forEach((el) => revealer.observe(el));
@@ -336,6 +343,25 @@
       }
     }, { rootMargin: "-45% 0px -50% 0px" });
     document.querySelectorAll(".cap").forEach((panel) => reader.observe(panel));
+  }
+
+  /* ---------- Portrait cards: light and a slight tilt follow the pointer ---------- */
+  if (finePointer && !reducedMotion) {
+    document.querySelectorAll(".person__link").forEach((card) => {
+      card.addEventListener("pointermove", (event) => {
+        const r = card.getBoundingClientRect();
+        const x = (event.clientX - r.left) / r.width;
+        const y = (event.clientY - r.top) / r.height;
+        card.style.setProperty("--mx", `${(x * 100).toFixed(1)}%`);
+        card.style.setProperty("--my", `${(y * 100).toFixed(1)}%`);
+        card.style.setProperty("--rx", `${((0.5 - y) * 7).toFixed(2)}deg`);
+        card.style.setProperty("--ry", `${((x - 0.5) * 9).toFixed(2)}deg`);
+      });
+      card.addEventListener("pointerleave", () => {
+        card.style.setProperty("--rx", "0deg");
+        card.style.setProperty("--ry", "0deg");
+      });
+    });
   }
 
   /* ---------- People strip: drag, swipe or use the arrows ---------- */

@@ -42,7 +42,7 @@ Any other static host (Vercel, Netlify) also works: import the repo, with no bui
 ## Editing content
 
 - **Text**: edit the HTML directly.
-- **Capabilities**: each capability is one `<li class="cap-row">` on the home page and one `<article class="cap">` (plus its link in the index) on the Services page.
+- **Capabilities**: each capability is one `<li class="cap-card">` on the home page and one `<article class="cap">` (plus its link in the index) on the Services page. The animated diagrams are inline SVG inside each one.
 - **Team members**: each person is one `<li class="person">` in `our-team/index.html` (and in the leadership strip on the home page). Copy an existing one, then change the photo, name, role and Calendly link.
 - **Numbers on the home page**: each count animates up to the number in its `data-count` attribute, so change the attribute and the text together.
 - **Logos**: client and employer logos are `<li class="logos__item">` cards and the `marquee` list; add or remove items as needed.
