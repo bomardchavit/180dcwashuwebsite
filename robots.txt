@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://180dcwashu.com/sitemap.xml
